@@ -34,16 +34,16 @@ if($request->isPost()) {
     if($USER->IsAuthorized()) $arFields["IS_AUTH"] = "да";
     else $arFields["IS_AUTH"] = "нет";
     
-    if($request->getPost("appartament")) $arFields["APPARTAMENT"] = $request->getPost("appartament");
+    if($request->getPost("appartament")) $arFields["APPARTAMENT"] = htmlspecialcharsbx((string)$request->getPost("appartament"));
     else $arFields["APPARTAMENT"] = "Не указан";
     
-    if($request->getPost("entrance")) $arFields["ENTRANCE"] = $request->getPost("entrance");
+    if($request->getPost("entrance")) $arFields["ENTRANCE"] = htmlspecialcharsbx((string)$request->getPost("entrance"));
     else $arFields["ENTRANCE"] = "Не указан";
     
-    if($request->getPost("floor")) $arFields["FLOOR"] = $request->getPost("floor");
+    if($request->getPost("floor")) $arFields["FLOOR"] = htmlspecialcharsbx((string)$request->getPost("floor"));
     else $arFields["FLOOR"] = "Не указан";
     
-    if($request->getPost("intercom")) $arFields["INTERCOM"] = $request->getPost("intercom");
+    if($request->getPost("intercom")) $arFields["INTERCOM"] = htmlspecialcharsbx((string)$request->getPost("intercom"));
     else $arFields["INTERCOM"] = "Не указан";
     
     $arFields["SERVICES"] = "";
