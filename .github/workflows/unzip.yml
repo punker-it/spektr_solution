@@ -3,7 +3,11 @@ on:
   push:
     paths:
       - '.last_version.zip'
-  workflow_dispatch:   # <-- это добавит кнопку ручного запуска
+  workflow_dispatch:
+
+# ✨ Добавьте этот блок, чтобы дать права на запись
+permissions:
+  contents: write
 
 jobs:
   unzip:
@@ -11,6 +15,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          # Явно передаем токен для последующего push
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Extract archive
         run: |
