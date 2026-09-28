@@ -2,7 +2,7 @@ name: Unzip Archive
 on:
   push:
     paths:
-      - 'archive.zip'
+      - '.last_version.zip'
   workflow_dispatch:   # <-- это добавит кнопку ручного запуска
 
 jobs:
