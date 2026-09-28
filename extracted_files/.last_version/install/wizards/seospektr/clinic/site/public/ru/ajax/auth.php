@@ -18,7 +18,8 @@ if($phone !== "") {
     
     if($arAuthResult["ERROR_TYPE"]) {
         
-        echo json_encode(array("error" => $arAuthResult["MESSAGE"]));
+        AddMessage2Log($arAuthResult["MESSAGE"]);
+        echo json_encode(array("error" => "Неверный логин или пароль"));
     } else {
         echo json_encode(array("isAuthorized" => "Y", "userName" => htmlspecialcharsbx($USER->GetFullName())));
     }
