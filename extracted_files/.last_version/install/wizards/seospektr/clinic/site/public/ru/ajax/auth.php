@@ -3,6 +3,8 @@
 global $APPLICATION;
 global $USER;
 
+header("Content-Type: application/json; charset=UTF-8");
+
 if(!check_bitrix_sessid()) {
     http_response_code(403);
     echo json_encode(array("error" => "invalid sessid"));
