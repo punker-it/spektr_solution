@@ -2,8 +2,8 @@ name: Unzip Archive
 on:
   push:
     paths:
-      - 'archive.zip'  # Сработает при загрузке файла с таким именем
-  workflow_dispatch:    # Или запустите вручную из вкладки Actions
+      - 'archive.zip'
+  workflow_dispatch:   # <-- это добавит кнопку ручного запуска
 
 jobs:
   unzip:
@@ -14,8 +14,7 @@ jobs:
 
       - name: Extract archive
         run: |
-          # 7z установлен на раннерах GitHub по умолчанию[reference:4]
-          7z x archive.zip -o./extracted_files/  # Распаковка в папку extracted_files
+          7z x archive.zip -o./extracted_files/
 
       - name: Commit and push extracted files
         run: |
