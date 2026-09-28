@@ -1,0 +1,26 @@
+{
+ "short_name": "SG-clinic",
+ "name": "SG-clinic",
+ "icons": [
+       {
+     "src":"#SITE_DIR#images/logo_square.png",
+     "sizes": "52x52",
+     "type": "image/png",
+     "purpose": "any maskable"
+   },{
+     "src":"#SITE_DIR#images/logo_square_out.png",
+     "sizes": "448x448",
+     "type": "image/png"
+   },{
+     "src":"#SITE_DIR#images/logo_square_out_out.png",
+     "sizes": "512x512",
+     "type": "image/png"
+   }
+ ],
+
+ "start_url": "#SITE_DIR#",
+ "background_color": "#14a09ded",
+ "theme_color": "#14a09ded",
+ "orientation": "any",
+ "display": "standalone"
+}

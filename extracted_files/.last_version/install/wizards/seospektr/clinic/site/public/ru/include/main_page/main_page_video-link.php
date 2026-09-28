@@ -1,0 +1,1 @@
+<span class="video-link" data-src="https://youtu.be/KPFJ97MEVhE" data-fancybox></span>

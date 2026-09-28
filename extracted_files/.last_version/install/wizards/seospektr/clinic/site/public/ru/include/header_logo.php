@@ -1,0 +1,1 @@
+<a href="<?=SITE_DIR?>"><img src="<?=SITE_TEMPLATE_PATH?>/image/logo-on.png" alt="описание"></a>

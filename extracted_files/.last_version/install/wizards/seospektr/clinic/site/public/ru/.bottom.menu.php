@@ -1,0 +1,60 @@
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+$aMenuLinks = Array(
+	Array(
+		"О клинике", 
+		"/about/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+    Array(
+		"Доктора", 
+		"/doctors/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+    Array(
+		"Услуги", 
+		"/services/", 
+		Array(), 
+		Array("CLASS"=>"full_drop_down_menu"), 
+		"" 
+	),
+    Array(
+		"Прайсы", 
+		"/price/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+    Array(
+		"Акции", 
+		"/actions/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+    Array(
+		"Информация", 
+		"/info/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+    Array(
+		"Отзывы", 
+		"/about/reviews/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+    Array(
+		"Контакты", 
+		"/contacts/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+);
+?>

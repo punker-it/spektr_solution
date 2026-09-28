@@ -1,0 +1,1 @@
+<img src="<?=SITE_TEMPLATE_PATH?>/image/specialized-image.webp" alt="описание">

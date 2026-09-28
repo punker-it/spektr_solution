@@ -1,0 +1,67 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"О клинике", 
+		SITE_DIR."/about/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Доктора", 
+		SITE_DIR."/doctors/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Услуги", 
+		SITE_DIR."/services/", 
+		Array(), 
+		Array("CLASS"=>"full_drop_down_menu"), 
+		"" 
+	),
+	Array(
+		"Прайсы", 
+		SITE_DIR."/price/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Акции", 
+		SITE_DIR."/actions/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Check-Up", 
+		SITE_DIR."/checkups/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Информация", 
+		SITE_DIR."/info/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Отзывы", 
+		SITE_DIR."/about/reviews/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Контакты", 
+		SITE_DIR."/contacts/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>
